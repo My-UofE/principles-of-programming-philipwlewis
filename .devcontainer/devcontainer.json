@@ -1,0 +1,31 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/miniconda",
+  "hostRequirements": {
+    "cpus": 1
+  },
+  "waitFor": "onCreateCommand",
+  "updateContentCommand": "" ,
+  "postCreateCommand": "bash /workspaces/UoE-Python/.profile/setup.sh",
+  "customizations": {
+    "codespaces": {
+      "openFiles": [],
+      "remote.autoForwardPorts": false
+    },
+    "vscode": {
+      "extensions": [
+        "ms-python.python"
+      ],
+      "settings": {
+        "editor.tabSize": 4,
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "terminal.integrated.profiles.linux": {
+          "bash": {
+            "path": "bash",
+            "icon": "terminal-bash"
+          }
+        }
+      }
+    }
+  }
+}
+        
