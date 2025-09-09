@@ -5,7 +5,7 @@
   },
   "waitFor": "onCreateCommand",
   "updateContentCommand": "" ,
-  "postCreateCommand": "for PROFILE in \"/workspaces/*/.profile\"; do bash \"$PROFILE/setup.sh\"; done",
+  "postCreateCommand": "bash -c 'for PROFILE in \"/workspaces/*/.profile\"; do bash \"$PROFILE/setup.sh\"; done'",
   "customizations": {
     "codespaces": {
       "openFiles": [],
