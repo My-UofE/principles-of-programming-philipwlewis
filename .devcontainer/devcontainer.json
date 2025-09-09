@@ -5,7 +5,8 @@
   },
   "waitFor": "onCreateCommand",
   "updateContentCommand": "" ,
-  "postCreateCommand": "bash -c 'for PROFILE in \"/workspaces/*/.profile\"; do bash \"$PROFILE/setup.sh\"; done'",
+  "postCreateCommand": "echo POSTCREATE; printenv",
+  "postStartCommand": "echpo STARTED; printenv",
   "customizations": {
     "codespaces": {
       "openFiles": [],
