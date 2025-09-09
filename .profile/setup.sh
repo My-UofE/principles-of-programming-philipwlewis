@@ -2,7 +2,7 @@
 
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 
-for PROFILE in "/workspaces/*/.profile"; do
+for PROFILE in /workspaces/*/.profile; do
    cd "$PROFILE"
    echo $PROFILE
    echo $SCRIPT_DIR
