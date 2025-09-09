@@ -5,7 +5,7 @@
   },
   "waitFor": "onCreateCommand",
   "updateContentCommand": "" ,
-  "postCreateCommand": "echo POSTCREATE; bash .profile/setup.sh",
+  "postCreateCommand": "echo bash .profile/setup.sh \"$PWD\"; bash .profile/setup.sh \"$PWD\";",
   "customizations": {
     "codespaces": {
       "openFiles": [],
