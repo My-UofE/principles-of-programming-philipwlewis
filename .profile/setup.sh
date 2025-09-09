@@ -1,5 +1,5 @@
 #!bash
-
+z
 for PROFILE in "/workspaces/*/.profile"; do
 
 if [[ $(hostname -s) = codespaces-* ]]; then

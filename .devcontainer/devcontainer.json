@@ -5,7 +5,7 @@
   },
   "waitFor": "onCreateCommand",
   "updateContentCommand": "" ,
-  "postCreateCommand": "bash /workspaces/UoE-Python/.profile/setup.sh",
+  "postCreateCommand": "for PROFILE in \"/workspaces/*/.profile\"; do bash \"$PROFILE/setup.sh\"; done",
   "customizations": {
     "codespaces": {
       "openFiles": [],
