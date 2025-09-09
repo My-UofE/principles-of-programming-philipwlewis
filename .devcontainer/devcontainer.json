@@ -5,8 +5,7 @@
   },
   "waitFor": "onCreateCommand",
   "updateContentCommand": "" ,
-  "postCreateCommand": "echo POSTCREATE; printenv",
-  "postStartCommand": "echpo STARTED; printenv",
+  "postCreateCommand": "echo POSTCREATE; bash .profile/setup.sh",
   "customizations": {
     "codespaces": {
       "openFiles": [],
