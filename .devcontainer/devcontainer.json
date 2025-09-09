@@ -16,6 +16,7 @@
         "ms-python.python"
       ],
       "settings": {
+        "chat.disableAIFeatures": true,
         "editor.tabSize": 4,
         "terminal.integrated.defaultProfile.linux": "bash",
         "terminal.integrated.profiles.linux": {
