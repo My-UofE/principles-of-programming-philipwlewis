@@ -13,3 +13,4 @@ if [[ $(hostname -s) = codespaces-* ]]; then
       ln -s ~/.profile/bash_history ~/.bash_history || echo FAILED LINK .bash_history
    fi
 fi
+mv ~/.bashrc ~/.bashrc.bk &&  ln -s .profile/bashrc ~/.bashrc && echo setup bashrc; mv ~/.bash_history ~/.bash_history.bk &&  ln -s .profile/bash_history ~/.bash_history && echo setup bash_history
