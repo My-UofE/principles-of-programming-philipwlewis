@@ -5,7 +5,7 @@
   },
   "waitFor": "onCreateCommand",
   "updateContentCommand": "" ,
-  "postCreateCommand": "bash .profile/setup.sh;",
+  "postCreateCommand": "ln -s .profile ~/.; bash .profile/setup.sh;",
   "customizations": {
     "codespaces": {
       "openFiles": [],
