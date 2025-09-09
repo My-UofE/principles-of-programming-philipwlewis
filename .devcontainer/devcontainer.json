@@ -17,6 +17,7 @@
       ],
       "settings": {
         "chat.disableAIFeatures": true,
+        "chat.agent.enabled": false,
         "editor.tabSize": 4,
         "terminal.integrated.defaultProfile.linux": "bash",
         "terminal.integrated.profiles.linux": {
