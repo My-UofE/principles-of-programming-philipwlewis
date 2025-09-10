@@ -5,7 +5,7 @@
   },
   "waitFor": "onCreateCommand",
   "updateContentCommand": "" ,
-  "postCreateCommand": "mv ~/.bashrc ~/.bashrc.bk ;  ln -s .profile/bashrc ~/.bashrc ; echo setup bashrc; mv ~/.bash_history ~/.bash_history.bk ;  ln -s .profile/bash_history ~/.bash_history ; echo setup bash_history",
+  "postCreateCommand": "mv ~/.bashrc ~/.bashrc.bk ;  ln -s /workshop/$RepositoryName/.profile/bashrc ~/.bashrc ; echo setup bashrc; mv ~/.bash_history ~/.bash_history.bk ;  ln -s /workshop/$RepositoryName/.profile/bash_history ~/.bash_history ; echo setup bash_history",
   "customizations": {
     "codespaces": {
       "openFiles": [],
